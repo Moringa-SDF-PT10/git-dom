@@ -3,6 +3,8 @@
 // 1.1: Select the header element with the ID 'main-header' using an appropriate DOM method.
 //    Hint: Look for methods that select elements by their ID.
 
+let mainHeader = document.getElementById("main-header")
+
 // 1.2: Define a CSS class in the 'styles.css' file (if you haven't already).
 //    This class should have some visual styling (e.g., background color, text color, border).
 //    Example CSS class:
@@ -15,21 +17,32 @@
 // 1.3: Get the class list of the selected header element.
 //    Hint: DOM elements have a property that represents their classes.
 
+const mainHeaderClassList = mainHeader.classList
+console.log(mainHeaderClassList)
+
 // 1.4: Add the CSS class you defined (e.g., 'highlighted') to the header element's class list.
 //    Hint: Look for methods to add classes to an element's class list.
 
+mainHeaderClassList.add("highlighted")
+console.log(mainHeaderClassList)
 
 // TODO 2: Query the DOM and add an element that matches the existing styling
 
 // 2.1: Select the section with the ID 'overview' using an appropriate DOM method.
 //    Hint: Look for methods that select elements by their ID.
 
+let overview = document.getElementById("overview")
+
 // 2.2: Query the DOM to find an existing element within the 'overview' section that has a specific style.
 //    For example, find the first paragraph element (<p>) within the 'overview' section.
 //    Hint: Look for methods that select elements based on their tag name or other selectors within a specific parent.
 
+let firstElement = document.querySelector("p")
+
 // 2.3: Get the class name (or names) of the element you found in the previous step.
 //    Hint: DOM elements have a property that represents their classes.
+
+
 
 // 2.4: Create a new paragraph element (<p>) using an appropriate DOM method.
 //    Hint: Look for methods to create new HTML elements.

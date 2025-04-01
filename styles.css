@@ -13,7 +13,12 @@ body {
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
-
+.highlighted {
+    font-style: italic;
+    padding: 5px;
+    font-size: 10px;
+    color: green;
+}
 .title {
     font-size: 2.5em;
     margin-bottom: 5px;
