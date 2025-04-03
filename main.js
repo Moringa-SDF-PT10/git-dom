@@ -31,7 +31,7 @@ console.log(mainHeaderClassList)
 // 2.1: Select the section with the ID 'overview' using an appropriate DOM method.
 //    Hint: Look for methods that select elements by their ID.
 
-let overview = document.getElementById("overview")
+let overviewSection = document.getElementById("overview")
 
 // 2.2: Query the DOM to find an existing element within the 'overview' section that has a specific style.
 //    For example, find the first paragraph element (<p>) within the 'overview' section.
@@ -42,29 +42,36 @@ let firstElement = document.querySelector("p")
 // 2.3: Get the class name (or names) of the element you found in the previous step.
 //    Hint: DOM elements have a property that represents their classes.
 
+console.log(firstElement.className)
 
-
+// TODO Tony
 // 2.4: Create a new paragraph element (<p>) using an appropriate DOM method.
 //    Hint: Look for methods to create new HTML elements.
 
+// TODO Edith
 // 2.5: Set the text content of the newly created paragraph element to something like "This is a new paragraph with the same styling."
 //    Hint: DOM elements have a property to set their inner text.
 
+// TODO Valentine
 // 2.6: Add the same class name (or names) you retrieved in step 2.3 to the newly created paragraph element's class list.
 //    Hint: Look for methods to add classes to an element's class list.
 
+// TODO Fortune
 // 2.7: Append the newly created and styled paragraph element to the 'overview' section.
 //    Hint: Look for methods to add a child element to a parent element.
 
 
 // TODO 3: Query the DOM and remove child elements
 
+// TODO Neema
 // 3.1: Select the unordered list element (<ul>) within the section with the ID 'features' using an appropriate DOM method.
 //    Hint: You might need to select the 'features' section first and then find the <ul> within it.
 
+// TODO Crispus
 // 3.2: Get a reference to the first child element of the selected unordered list.
 //    Hint: DOM elements have properties to access their first child.
 
+// TODO All 
 // 3.3: Use a loop (e.g., a `while` loop) to repeatedly remove the first child element of the unordered list until it has no more children.
 //    Hint: DOM elements have a method to remove a child element. Be careful with how the DOM updates as you remove elements.
 
