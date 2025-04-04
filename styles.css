@@ -23,6 +23,9 @@ body {
 .subtitle {
     font-size: 1em;
     color: #54595e;
+    background-color: yellow;
+    color: black;
+    border: 2px solid orange;
 }
 
 #sidebar {
