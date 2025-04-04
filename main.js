@@ -39,18 +39,29 @@ let className = paragraph ? paragraph.className : "";
 
 // 2.4: Create a new paragraph element (<p>) using an appropriate DOM method.
 //    Hint: Look for methods to create new HTML elements.
+let newElement = document.createElement("p")
+newElement.className=className
 
 
 // 2.5: Set the text content of the newly created paragraph element to something like "This is a new paragraph with the same styling."
 //    Hint: DOM elements have a property to set their inner text.
 
+newElement.textContent =  "This is a new paragraph with the same styling.";
+newElement.style.color = "#2e8b57"
+newElement.style.fontWeight = "bold"
+=======
+
+
 
 // 2.6: Add the same class name (or names) you retrieved in step 2.3 to the newly created paragraph element's class list.
 //    Hint: Look for methods to add classes to an element's class list.
-
+let headerClasses = header.classList;
 // 2.7: Append the newly created and styled paragraph element to the 'overview' section.
 //    Hint: Look for methods to add a child element to a parent element.
 
+overview.appendChild(newElement);
+=======
+ 
 // TODO 3: Query the DOM and remove child elements
 
 // 3.1: Select the unordered list element (<ul>) within the section with the ID 'features' using an appropriate DOM method.
