@@ -2,7 +2,7 @@
 
 // 1.1: Select the header element with the ID 'main-header' using an appropriate DOM method.
 //    Hint: Look for methods that select elements by their ID.
-
+let header = document.getElementById("main-header")
 // 1.2: Define a CSS class in the 'styles.css' file (if you haven't already).
 //    This class should have some visual styling (e.g., background color, text color, border).
 //    Example CSS class:
@@ -14,10 +14,13 @@
 
 // 1.3: Get the class list of the selected header element.
 //    Hint: DOM elements have a property that represents their classes.
+let classList = header.classList
+
+
 
 // 1.4: Add the CSS class you defined (e.g., 'highlighted') to the header element's class list.
 //    Hint: Look for methods to add classes to an element's class list.
-
+header.classList.add("highlighted")
 // TODO 2: Query the DOM and add an element that matches the existing styling
 
 // 2.1: Select the section with the ID 'overview' using an appropriate DOM method.
@@ -49,7 +52,7 @@ newElement.className=className
 newElement.textContent =  "This is a new paragraph with the same styling.";
 newElement.style.color = "#2e8b57"
 newElement.style.fontWeight = "bold"
-=======
+
 
 
 
@@ -60,7 +63,7 @@ let headerClasses = header.classList;
 //    Hint: Look for methods to add a child element to a parent element.
 
 overview.appendChild(newElement);
-=======
+
  
 // TODO 3: Query the DOM and remove child elements
 
