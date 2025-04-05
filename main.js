@@ -80,10 +80,10 @@ console.log(firstChild)
 // 3.3: Use a loop (e.g., a `while` loop) to repeatedly remove the first child element of the unordered list until it has no more children.
 //    Hint: DOM elements have a method to remove a child element. Be careful with how the DOM updates as you remove elements.
 
-//======== A While Loop that removes both the first list item====
-//while (firstChild) {
-//    featureList.removeChild(firstChild);
-//}
+//======== A While Loop that removes the first list item====
+while (firstChild) {
+   featureList.removeChild(firstChild);
+}
 
 // Alternatively (more efficient approach for step 3):
 
@@ -103,13 +103,15 @@ console.log(lastChild)
 //    featureList.removeChild(lastItem);
 //}
 
+
+//SIDE NOTE: We wanted to see if its possible to remove both the first and last items at the same time
 //======== A While Loop that removes both the first and last list items====
 // Remove First and Last item together
-while (firstChild) {
-    if (firstChild) {
-        featureList.removeChild(firstChild);
-    }
-    if (lastChild) {
-        featureList.removeChild(lastChild);
-    }
-}
+// while (firstChild) {
+//     if (firstChild) {
+//         featureList.removeChild(firstChild);
+//     }
+//     if (lastChild) {
+//         featureList.removeChild(lastChild);
+//     }
+// }
