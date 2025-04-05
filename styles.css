@@ -97,3 +97,9 @@ body {
 #footer a:hover {
     text-decoration: underline;
 }
+
+.highlighted {
+    color: black;
+    border: 8px solid orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
