@@ -68,7 +68,7 @@ document.getElementById("overview").append(newParagraph);  // moved from history
 
 let featureList = document.getElementById("features");
 let listItems = featureList.querySelector("ul");
-//console.log(listItems);
+console.log(listItems);
 
 // 3.2: Get a reference to the first child element of the selected unordered list.
 //    Hint: DOM elements have properties to access their first child.
@@ -78,20 +78,20 @@ console.log("First Element: ",  firstItem);
 
 // 3.3: Use a loop (e.g., a `while` loop) to repeatedly remove the first child element of the unordered list until it has no more children.
 //    Hint: DOM elements have a method to remove a child element. Be careful with how the DOM updates as you remove elements.
-//while(listItems.firstElementChild){
-    //listItems.removeChild(listItems.firstElementChild);
-//}
+while(listItems.firstElementChild){
+    listItems.removeChild(listItems.firstElementChild);
+}
 
 // Alternatively (more efficient approach for step 3):
 
 // 3.1 (Alternative): Select the unordered list element (<ul>) within the section with the ID 'features'.
-//featureList = document.querySelector("#features ul");
-//console.log(featureList);
+featureList = document.querySelector("#features ul");
+console.log(featureList);
 
 // 3.2 (Alternative): While the unordered list has at least one child element...
 //    Hint: DOM elements have a property to check the number of their children.
-//]listItems = featureList.querySelector("ul").children.length;
-//console.log(listItems);
+listItems = featureList.querySelector("ul").children.length;
+console.log(listItems);
 
 // 3.3 (Alternative): ...remove the last child element of the unordered list.
 //    Hint: DOM elements have a method to remove their last child.
