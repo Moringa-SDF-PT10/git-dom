@@ -18,8 +18,15 @@ document.getElementById ("main-header")
 // 1.3: Get the class list of the selected header element.
 //    Hint: DOM elements have a property that represents their classes.
 
-let header = document.getElementsByClassName("title")[0]
-console.log(header.classList)
+///Nb: not sure which header the question is asking so we had two options:
+
+//option1
+header1.classList
+
+//option2
+
+let header2 = document.getElementsByClassName("title")[0];
+header2.classList;
 
 
 // 1.4: Add the CSS class you defined (e.g., 'highlighted') to the header element's class list.
@@ -54,6 +61,9 @@ p.textContent = "This is a new paragraph with the same styling."
 // 2.6: Add the same class name (or names) you retrieved in step 2.3 to the newly created paragraph element's class list.
 //    Hint: Look for methods to add classes to an element's class list.
 
+existingClassesList.forEach(className => {
+  newPara.classList.add(className);
+});
 
 // 2.7: Append the newly created and styled paragraph element to the 'overview' section.
 //    Hint: Look for methods to add a child element to a parent element.
@@ -73,13 +83,9 @@ document.querySelector("#features ul li")
 // 3.3: Use a loop (e.g., a `while` loop) to repeatedly remove the first child element of the unordered list until it has no more children.
 //    Hint: DOM elements have a method to remove a child element. Be careful with how the DOM updates as you remove elements.
 
-document.addEventListener("DOMContentLoaded", () => {
-    const ul = document.querySelector("#features ul");
-    const secondChild = ul.children[1]; // index starts at 0
-    if (secondChild) {
-      ul.removeChild(secondChild);
-    }
-  });
+while (unorderedlist.firstChild) {
+  unorderedlist.removeChild(unorderedlist.firstChild); 
+}
 
 // Alternatively (more efficient approach for step 3):
 
